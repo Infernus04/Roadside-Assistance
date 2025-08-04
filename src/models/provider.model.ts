@@ -1,5 +1,5 @@
-import { password } from "bun";
 import mongoose from "mongoose";
+import { IProvider } from "../interfaces/provider.interface";
 
 const providerSchema = new mongoose.Schema({
     name : {
@@ -36,3 +36,5 @@ const providerSchema = new mongoose.Schema({
     }
 
 })
+
+export const ProviderModel = mongoose.model<IProvider>("Provider", providerSchema);
