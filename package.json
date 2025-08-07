@@ -4,7 +4,9 @@
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
+    "@hono/node-server": "^1.18.1",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "hono": "^4.8.12",
     "mongoose": "^8.17.0",
     "zod": "^4.0.14"
